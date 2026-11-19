@@ -1,84 +1,73 @@
-# 🛡️ AI Spam Detector
-
-An AI-powered Spam Detection Application built with Python and Machine Learning. The application analyses text messages and classifies them as Spam or Ham (Not Spam).
-
-## 🚀 Live Demo
-
-Try the application here:
-
-[Launch AI Spam Detector]https://nonso001-ai-spam-detector.streamlit.app/
+# 💌 AI Spam Detector
 
 ## 📌 Project Overview
 
-The AI Spam Detector uses Machine Learning and Natural Language Processing (NLP) to identify unwanted spam messages and distinguish them from legitimate messages.
+AI Spam Detector is a Machine Learning application that automatically
+classifies SMS messages as either Spam or Ham (Legitimate Messages).
 
-Users can enter a message and receive an instant prediction with a confidence score.
+The project uses Natural Language Processing (NLP) and the Naive Bayes
+algorithm to identify unwanted messages.
 
-## ✨ Key Features
+The application provides predictions and confidence scores through
+an interactive Streamlit interface.
 
-- Spam and Ham message classification.
-- Machine Learning predictions.
-- Prediction confidence score.
-- Professional Streamlit interface.
-- Prediction history.
-- Download prediction history as CSV.
-- Prediction statistics dashboard.
-- Developer information section.
+## 🎯 Project Objectives
 
-## 🧠 Machine Learning Techniques
+- Detect unwanted spam messages.
+- Identify legitimate SMS messages.
+- Apply Machine Learning to real-world text classification.
+- Build and deploy an interactive AI application.
 
-- Algorithm: Naive Bayes.
-- Text Vectorization: TF-IDF.
-- Model Serialization: Joblib.
+## 📊 Dataset
+
+The project uses the SMS Spam Collection Dataset.
+
+Dataset Information:
+
+- Original Messages: 5,572
+- Cleaned Messages: 5,169
+- Ham Messages: 4,516
+- Spam Messages: 653
+- Duplicate Messages Removed: 403
 
 ## 🛠️ Technologies Used
 
 - Python
-- Scikit-learn
 - Pandas
-- Streamlit
+- Scikit-learn
+- Natural Language Processing (NLP)
+- TF-IDF Vectorization
+- Multinomial Naive Bayes
 - Joblib
+- Streamlit
+- Jupyter Notebook
 
-## 📂 Project Structure
+## ⚙️ Machine Learning Workflow
 
-AI-Spam-Detector/
-│
-├── app.py
-├── spam_detector_model.pkl
-├── spam_vectorizer.pkl
-├── requirements.txt
-└── README.md
+1. Dataset Loading
+2. Data Cleaning
+3. Duplicate Removal
+4. Feature and Target Separation
+5. Train-Test Splitting
+6. TF-IDF Vectorization
+7. Model Training
+8. Model Evaluation
+9. Model Saving
+10. Streamlit Deployment
 
-## ⚙️ Installation
+## 🤖 Model Performance
 
-Clone this repository:
+The trained model achieved the following results:
 
-git clone YOUR_GITHUB_REPOSITORY_URL
+| Evaluation Metric | Result |
+|-------------------|--------|
+| Accuracy | 96.91% |
+| Spam Precision | 100% |
+| Spam Recall | 76% |
+| Spam F1-Score | 86% |
 
-Navigate into the project folder:
+### Confusion Matrix
 
-cd AI-Spam-Detector
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Run the application:
-
-streamlit run app.py
-
-## 🎯 Project Objective
-
-The goal of this project is to demonstrate how Artificial Intelligence, Machine Learning, and Natural Language Processing can be used to automatically detect unwanted spam messages.
-
-## 👨‍💻 Developer
-
-**Nonso Adubasim**
-
-Aspiring AI/ML Engineer | Data Analyst | Python Developer
-
-Passionate about Artificial Intelligence, Machine Learning, Data Analysis, and building practical AI-powered applications.
-
-## ⭐ Project Status
-
-Completed and successfully deployed using Streamlit Community Cloud.
+```text
+[[903   0]
+ [ 32  99]]
