@@ -11,6 +11,12 @@ algorithm to identify unwanted messages.
 The application provides predictions and confidence scores through
 an interactive Streamlit interface.
 
+## 🚀 Live Demo
+
+Try the application here:
+
+[Launch AI Spam Detector]https://nonso001-ai-spam-detector.streamlit.app/
+
 ## 🎯 Project Objectives
 
 - Detect unwanted spam messages.
